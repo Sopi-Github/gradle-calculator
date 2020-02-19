@@ -13,7 +13,8 @@ pipeline
 		   {
 		       steps {
 			        withGradle {
-                    sh './gradlew build'
+sh './gradlew app:dependencies'
+sh './gradlew build'
 				}			   
 			   }
 		   }
